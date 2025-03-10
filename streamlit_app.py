@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 
 # Configure the page
 st.set_page_config(
-    page_title="Basketball ML Rankings",
+    page_title="Hoops ML Rankings",
     page_icon=":basketball:",
     layout="wide"
 )
@@ -345,41 +345,7 @@ def main():
             "text/csv",
             key='download-conf-csv'
         )
-    
-    # Add footer
-    #st.markdown("---")
-    # st.markdown(
-    #     """
-    #     <div style="
-    #         position: relative;
-    #         bottom: 0;
-    #         width: 100%;
-    #         text-align: center;
-    #         padding: 20px 0;
-    #         color: #666;
-    #         font-size: 14px;
-    #     ">
-    #         <p>Created by Trevor Barr</p>
-    #         <p>
-    #             <a href="https://twitter.com/YourHandle" target="_blank" 
-    #                style="margin: 0 10px; color: #0077B5; text-decoration: none;">
-    #                 Twitter
-    #             </a>
-    #             •
-    #             <a href="https://github.com/YourHandle" target="_blank" 
-    #                style="margin: 0 10px; color: #0077B5; text-decoration: none;">
-    #                 GitHub
-    #             </a>
-    #             •
-    #             <a href="https://www.linkedin.com/in/trevorabarr/" target="_blank" 
-    #                style="margin: 0 10px; color: #0077B5; text-decoration: none;">
-    #                 LinkedIn
-    #             </a>
-    #         </p>
-    #     </div>
-    #     """,
-    #     unsafe_allow_html=True
-    # )
+
 
 if __name__ == "__main__":
     main()
