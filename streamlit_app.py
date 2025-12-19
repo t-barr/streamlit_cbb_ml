@@ -135,8 +135,8 @@ def display_matchup_predictor(predictions_df, team_logos_df):
         st.warning("Please select two different teams.")
     else:
         # Retrieve spreads
-        S_home = predictions_df[(predictions_df['Home_Team'] == team1) & (predictions_df['Away_Team'] == team2)]['Average_Spread'].values[0]
-        S_away = predictions_df[(predictions_df['Home_Team'] == team2) & (predictions_df['Away_Team'] == team1)]['Average_Spread'].values[0]
+        S_home = predictions_df[(predictions_df['Home_Team'] == team1) & (predictions_df['Away_Team'] == team2)]['Predicted_Spread'].values[0]
+        S_away = predictions_df[(predictions_df['Home_Team'] == team2) & (predictions_df['Away_Team'] == team1)]['Predicted_Spread'].values[0]
         neutral_spread = (S_home - S_away) / 2
 
         # Helper function to determine favored team and points
@@ -349,4 +349,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
