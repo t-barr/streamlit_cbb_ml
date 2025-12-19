@@ -30,7 +30,7 @@ def load_rankings(filepath='playAll_avgRankings.csv'):
     df.insert(0, 'Rank', range(1, len(df) + 1))
     return df
 
-def load_predictions(filepath='individual_predictions.csv'):
+def load_predictions(filepath='playAll_predictions.csv'):
     """Load and prepare matchup prediction data."""
     df = pd.read_csv(filepath)
     return df
@@ -349,3 +349,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
