@@ -25,7 +25,7 @@ def load_rankings(filepath='playAll_avgRankings.csv'):
     })
     df = df.drop(columns=['home_team_avg_spread', 'away_team_avg_spread', 'home_team_avg_win', 'away_team_avg_win'])
     df['Conference'] = df['Conference'].astype(str)
-    df['Rating'] = df['Rating'] * -1
+    df['Rating'] = df['Rating']
     df = df.sort_values('Rating', ascending=False).reset_index(drop=True)
     df.insert(0, 'Rank', range(1, len(df) + 1))
     return df
@@ -349,5 +349,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
